@@ -1,0 +1,17 @@
+export const STRING = {
+  username: 'Test username',
+  domesticTestAccount: 'Domestic Test Account',
+  caseDashboard: 'Case Dashboard',
+  caseDashboarddesc: 'Cases, Bugs & Enhancements',
+  featuredContent: 'Featured Content',
+  featuredContentdesc: 'Knowledge Base, Videos & Patches',
+  importantNotice: 'Important Notices & Updates',
+  importantNoticedesc: 'PLC and Deprecation Notices',
+  recentUpdates: 'Recent Updates',
+  dummyText: 'Lorem Ipsem is the dummy text of printing',
+  all: 'All',
+  technicalArticles: 'Technical Articles',
+  videos: 'Videos',
+  patches: 'Patches',
+  bugs: 'Bugs',
+};
