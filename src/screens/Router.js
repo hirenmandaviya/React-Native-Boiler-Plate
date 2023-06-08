@@ -1,4 +1,4 @@
-//import liraries
+
 import React from "react";
 import { Image, Platform } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
