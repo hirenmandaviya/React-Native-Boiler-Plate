@@ -1,29 +1,29 @@
 //import liraries
 import { StyleSheet, Text, View } from "react-native";
-import React, { useEffect } from "react";
+import React from "react";
 import { scaleSize } from "../../common/Utils/constant";
 import { FONTS } from "../../common/Utils/fonts";
 import { COLORS } from "../../common/Utils/Colors";
 import { SCREENS } from "../../common/Utils/Screens";
 import { useNavigation } from "@react-navigation/native";
 /**
- * Splash screen component.
- * This component is displayed while the app is loading.
- * It displays the text "Splash" in the center of the screen.
+ * Welcome screen component.
+ * This component is displayed first when the app is launched.
+ * It displays the text "Welcome" in the center of the screen.
  */
-const Splash = () => {
+const Welcome = () => {
   const navigation = useNavigation();
 
-  useEffect(() => {
-    // Navigate to welcome screen after 3 seconds
-    setTimeout(() => {
-      navigation.navigate(SCREENS.Welcome);
-    }, 1500);
-  }, []);
+  // Navigates to the Dashboard screen.
+  const navigateToDashboard = () => {
+    navigation.navigate(SCREENS.Dashboard);
+  };
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Splash</Text>
+      <Text onPress={navigateToDashboard} style={styles.text}>
+        Welcome
+      </Text>
     </View>
   );
 };
@@ -43,4 +43,4 @@ const styles = StyleSheet.create({
 });
 
 //make this component available to the app
-export default Splash;
+export default Welcome;

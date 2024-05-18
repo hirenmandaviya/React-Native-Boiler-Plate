@@ -5,10 +5,10 @@ import { COLORS } from "../../common/Utils/Colors";
 import { FONTS } from "../../common/Utils/fonts";
 
 // create a component
-const Home = () => {
+const More = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Home</Text>
+      <Text style={styles.text}>More</Text>
     </View>
   );
 };
@@ -28,4 +28,4 @@ const styles = StyleSheet.create({
 });
 
 //make this component available to the app
-export default Home;
+export default More;

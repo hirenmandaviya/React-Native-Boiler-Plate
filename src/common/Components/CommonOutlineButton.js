@@ -7,7 +7,7 @@ import { FONTS } from "../Utils/fonts";
 import { scaleSize } from "../Utils/constant";
 
 // create a component
-const CommonButton = ({
+const CommonOutlineButton = ({
   label,
   buttonStyle,
   labelStyle,
@@ -36,24 +36,27 @@ const CommonButton = ({
 // define your styles
 const styles = StyleSheet.create({
   loginButtonContainer: {
-    backgroundColor: COLORS.Theme,
+    // backgroundColor: COLORS.Theme,
     flexDirection: "row",
+    borderWidth: 1,
+    borderColor: COLORS.Outline,
     alignItems: "center",
     justifyContent: "center",
-    paddingVertical: scaleSize(22),
+    paddingVertical: scaleSize(12),
+    paddingHorizontal: scaleSize(12),
     borderRadius: scaleSize(100),
   },
   loginButton: {
-    color: COLORS.White,
-    fontFamily: FONTS.RMedium,
-    fontSize: scaleSize(18),
+    color: COLORS.TextBlue,
+    fontFamily: FONTS.RBold,
+    fontSize: scaleSize(14),
   },
   image: {
     height: scaleSize(18),
     width: scaleSize(18),
-    marginRight: scaleSize(10),
+    marginRight: scaleSize(8),
   },
 });
 
 //make this component available to the app
-export default CommonButton;
+export default CommonOutlineButton;

@@ -1,14 +1,14 @@
 //import liraries
-import React, {Component} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
-import { FONTS } from '../../common/Utils/fonts';
-import { COLORS } from '../../common/Utils/Colors';
+import React from "react";
+import { View, Text, StyleSheet } from "react-native";
+import { COLORS } from "../../common/Utils/Colors";
+import { FONTS } from "../../common/Utils/fonts";
 
 // create a component
-const Setting = () => {
+const Message = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text} >Setting</Text>
+      <Text style={styles.text}>Message</Text>
     </View>
   );
 };
@@ -17,8 +17,8 @@ const Setting = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
     backgroundColor: COLORS.White,
   },
   text: {
@@ -28,4 +28,4 @@ const styles = StyleSheet.create({
 });
 
 //make this component available to the app
-export default Setting;
+export default Message;
