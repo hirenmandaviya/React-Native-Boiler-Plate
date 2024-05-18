@@ -13,4 +13,4 @@ npx react-native-rename "ProjectName" --skipGitStatusCheck
 - Stack Navigation
 - Bottom Tab Navigation
 - Internet Check
-- Global loader with context state.
+- Global loader with context state
