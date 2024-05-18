@@ -58,10 +58,10 @@ Guidelines on how to use the project after installation.
 
 ### Running the project
 
-For iOS:
+For Android:
 
 ```sh
-npx react-native run-ios
+npx react-native run-android
 ```
 
 For iOS:
